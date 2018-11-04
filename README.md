@@ -2,6 +2,7 @@
 Getting and Cleaning Data Week 4 Peer Reviewed Assignment
 
 This project contains an R script which will ingest the data and produce a dataframe when sourced:  `run_analysis.R` 
+`totalData` will be before averaging data and `tidyFinal` is after averaging.
 
 There is also a `codebook.txt` file that describes the data.
 
