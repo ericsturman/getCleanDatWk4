@@ -22,3 +22,4 @@ orderedTotalData <- totalData[order(totalData$testOrTrain, totalData$subject, to
 #removing NAs does not result in less rows, so there are no NAs in the data set.
 #noNAs<- totalData[complete.cases(totalData),]
 tidyFinal <- aggregate(orderedTotalData[names(orderedTotalData)[1:79]], by=orderedTotalData[c("activity", "subject", "testOrTrain")], FUN=mean)
+write.table(tidyFinal, "tidyDataSet.txt", row.name=FALSE)
